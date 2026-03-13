@@ -64,8 +64,14 @@
    ```
 
 5. **Run database migrations**
+
    ```bash
    npm run db:dev:deploy
+   ```
+
+6. **Generate Prisma Client**
+   ```bash
+   npx prisma generate
    ```
 
 ## Project setup
