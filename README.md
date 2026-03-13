@@ -23,7 +23,50 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Nest](https://github.com/nestjs/nest) framework with [Prisma](https://www.prisma.io/) and PostgreSQL boilerplate. This is a starter template for building scalable backend applications.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+- PostgreSQL (local or via Docker)
+- Git SSH key configured for GitHub
+
+### Setup Instructions
+
+1. **Clone the repository**
+
+   ```bash
+   git clone git@github.com:mahdibm-dev/nestjs-prisma.git
+   cd nestjs-prisma
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Setup environment variables**
+
+   Create a `.env` file in the root directory:
+
+   ```bash
+   DATABASE_URL="postgresql://postgres:postgres@localhost:5432/nestjs"
+   ```
+
+4. **Start the database (using Docker)**
+
+   ```bash
+   npm run db:dev:up
+   ```
+
+5. **Run database migrations**
+   ```bash
+   npm run db:dev:deploy
+   ```
 
 ## Project setup
 
